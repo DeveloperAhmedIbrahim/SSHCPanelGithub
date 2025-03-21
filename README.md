@@ -7,3 +7,11 @@
 ### chmod 0600 ~/.ssh/config
 ### chown techrev2:techrev2 ~/.ssh/config
 ### ssh -T git@github.com
+
+### .cpanel.yml
+```yml
+deployment:
+    task:
+    - export DEPLOYPATH=/home2/techrev2/coded.money.techrevivals.net
+    - /bin/cp * $DEPLOYPATH
+```
